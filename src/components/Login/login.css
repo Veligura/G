@@ -1,0 +1,17 @@
+body {
+  background: #fbe9e7;
+  min-height: 100vh; }
+
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.login {
+  margin-top: 10%;
+  text-align: center; }
+
+.login img {
+  width: 300px;
+  display: block;
+  margin-bottom: 10px; }
