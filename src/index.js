@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import{Provider} from 'react-redux';
 import Routes from './routes';
 import configureStore from './store/configureStore';
-import '../node_modules/materialize-css/dist/css/materialize.css';
+
 
 
 

@@ -4,7 +4,7 @@ import openPopup from './popup';
 const client_id = "87e58c8fc4350e66f0ce39b115d6dcfca07d1d18";
 const client_secret = "54fe3dcbbfaf9fea81e60c922040e4b67e75b257";
 const redirect_uri = "http://localhost:3000/#";
-const  url = "https://gitter.im/login/oauth/authorize"
+const url = "https://gitter.im/login/oauth/authorize"
 
 
 const code = /[?code=]/;

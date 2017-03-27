@@ -1,0 +1,9 @@
+.chat {
+  min-width: 100%;
+  flex-shrink: 1;
+  background: deepskyblue;
+  transform: translate3d(220px, 0, 0);
+  transition: transform .3s; }
+
+.chat.isOpen {
+  transform: translate3d(220px, 0, 0); }
