@@ -1,9 +1,11 @@
 .chat {
-  min-width: 100%;
-  flex-shrink: 1;
-  background: deepskyblue;
+
+
+  width: calc(100% - 220px);
+  background: black;
   transform: translate3d(220px, 0, 0);
   transition: transform .3s;
+  overflow-y: scroll;
 }
 
 .chat.isOpen {

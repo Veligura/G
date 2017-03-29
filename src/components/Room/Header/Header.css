@@ -1,0 +1,7 @@
+.header {
+  background-color: #2d2c2c;
+  height: 7%;
+  min-height: 45px;
+  color: white;
+  font-size: 14px;
+  display: flex; }

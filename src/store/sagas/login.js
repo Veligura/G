@@ -1,11 +1,10 @@
 import {call, put, takeEvery } from 'redux-saga/effects';
 import {createBrowserHistory} from 'history'
-import authhorise from '../../helpers/oauth/oauth2';
+import authhorise from '../../utils/oauth/oauth2';
 import { LOGIN_REQUEST, LOGIN_FAILURE, LOGIN_SUCCESS } from '../modules/login';
-import { setToken } from '../../helpers/oauth/token'
+import { setToken } from '../../utils/oauth/token'
 
 
-const history = createBrowserHistory();
 
 
 

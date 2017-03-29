@@ -1,0 +1,33 @@
+.roomList li  {
+  user-select: none;
+  cursor: default;
+  text-align: left;
+  display:flex;
+  position: relative;
+  list-style-type: none;
+  padding: 3px 5px 3px 5px;
+  font-size: 10px;
+  color: white;
+  border-bottom: 1px solid #222;
+
+  border-radius: 2px;
+  background:  #2a2a2a;
+}
+
+.roomList li div{
+
+  margin: 5px;
+}
+.roomList li img  {
+
+  height: 20px ;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: #fbe9e7;
+  background-color: #eeeeee;
+}
+
+
+.roomList li:hover {
+  background: #444;
+}

@@ -1,4 +1,4 @@
-import { hasToken, getToken } from '../../helpers/oauth/token'
+import { hasToken, getToken } from '../../utils/oauth/token'
 
 export const LOGIN_REQUEST = 'LOGIN/LOGIN_REQUEST';
 export const LOGIN_SUCCESS = 'LOGIN/LOGIN_SUCCESS';
@@ -12,25 +12,25 @@ const initialState = {
   isLoggedIn: !!hasToken(),
   token: getToken(),
   error: null
-}
+};
 
 
 
 
 const auth = (state = initialState, action) => {
   switch (action.type) {
-    case LOGIN_SUCCESS:
+      case LOGIN_SUCCESS:
       console.log(action)
-      return Object.assign({}, state, {
+      return {...state,
         isLoggedIn: true,
-        token: action.token,
+        token: action.payload,
         error: null
-      })
+      }
     case LOGIN_FAILURE:
       return Object.assign({}, state, {
         isLoggedIn: false,
         token: null,
-        error: action.error
+        error: action.payload
       })
     case LOGOUT:
       return Object.assign({}, state, {

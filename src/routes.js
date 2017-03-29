@@ -26,6 +26,7 @@ const PrivateRoute = ({ component, auth, ...rest }) => {
 };
 
 const LoginRoute = ({ component, auth, ...rest }) => {
+    console.log(auth)
     return (<Route {...rest} render={props => (
         !auth ? (
                 React.createElement(component, props)
@@ -48,8 +49,8 @@ console.log(props)
     return (
         <Router>
             <Switch>
-                <PrivateRoute exact path={'/'} auth={props.isLoggedIn} component={App}/>
-                <LoginRoute  path={'/login'} auth={props.isLoggedIn} component={Login}/>
+                <PrivateRoute exact path={'/'} auth={!!props.token} component={App}/>
+                <LoginRoute  path={'/login'} auth={!!props.token} component={Login}/>
                 <Route render={() => (<h1>Page not found</h1>)}/>
             </Switch>
         </Router>)

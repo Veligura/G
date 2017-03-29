@@ -1,0 +1,12 @@
+.message {
+  display: flex;
+  border-radius: 3px;
+  background-color: #2a2a2a;
+  margin: 7px;
+  padding: 5px;
+  color: white;
+  border-bottom: 2px solid black; }
+
+.message img {
+  height: 32px;
+  width: 32px; }
